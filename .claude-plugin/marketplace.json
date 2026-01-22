@@ -1,0 +1,48 @@
+{
+  "name": "my-claude-marketplace",
+  "owner": {
+    "name": "Garry Huang",
+    "email": "huangjl@yeastar.com",
+    "source": "url",
+    "url": "https://gitee.com/hjl761619162"
+  },
+  "metadata": {
+    "description": "生产级工作流编排插件市场,提供聚焦的插件、专用agent和技能 - 优化粒度安装和最小token使用",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "design-doc-generator",
+      "source": "./plugins/design-doc-generator",
+      "description": "生成详细设计模板的全面技术设计文档,包含PlantUML图表支持",
+      "version": "1.0.0",
+      "author": {
+        "name": "Garry Huang",
+        "url": "https://gitee.com/hjl761619162"
+      },
+      "homepage": "https://gitee.com/hjl761619162/my-claude-marketplace",
+      "repository": "https://gitee.com/hjl761619162/my-claude-marketplace",
+      "license": "MIT",
+      "keywords": [
+        "design-doc",
+        "technical-design",
+        "plantuml",
+        "documentation",
+        "feishu-template",
+        "architecture-diagram",
+        "sequence-diagram",
+        "flowchart"
+      ],
+      "category": "documentation",
+      "strict": false,
+      "agents": [
+        {
+          "name": "design-doc-generator",
+          "file": "agents/design-doc-generator.md",
+          "model": "inherit",
+          "description": "创建全面详细设计文档的专用agent"
+        }
+      ]
+    }
+  ]
+}
