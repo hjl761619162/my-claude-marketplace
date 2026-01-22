@@ -26,9 +26,7 @@
       "keywords": [
         "design-doc",
         "technical-design",
-        "plantuml",
         "documentation",
-        "feishu-template",
         "architecture-diagram",
         "sequence-diagram",
         "flowchart"
@@ -36,12 +34,7 @@
       "category": "documentation",
       "strict": false,
       "agents": [
-        {
-          "name": "design-doc-generator",
-          "file": "agents/design-doc-generator.md",
-          "model": "inherit",
-          "description": "创建全面详细设计文档的专用agent"
-        }
+        "./agents/design-doc-generator.md"
       ]
     }
   ]
